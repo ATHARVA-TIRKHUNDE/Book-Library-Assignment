@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #3dce77;
+    padding-block: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-cont {
+
+    background-color: rgb(226, 223, 223);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+header h1 {
+    color: rgb(54, 53, 53);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header .search {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    border-radius: 8px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    width: 300px;
+}
+
+.toggle {
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center;
+    margin: 20px 0;
+}
+
+.toggle {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.toggle button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle button:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.1);
+}
+
+.toggle button.active {
+    background-color: #007BFF; /* Active button color */
+    color: white;
+}
+
+.toggle button i {
+    font-size: 1.2rem;
+    margin-right: 5px; /* Optional spacing between icon and text */
+}
+
+.toggle button.active {
+    background-color: #007BFF; /* Active button color */
+    color: white;
+}
+
+.toggle button i {
+    font-size: 1.2rem;
+    margin-right: 5px; /* Optional spacing between icon and text */
+}
+
+.sort {
+    border: none;
+    background-color: #ededed;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+main {
+    background-image: url('pattern.jpg');
+}
+
+.main-container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 1/3 ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: #fff; 
+    margin: 10px;
+    padding: 20px 10px;
+}
+
+.card:hover{
+    transition: all 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.image-container {
+    width: 100%;
+    height: 200px;  
+    overflow: hidden; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 10px;
+}
+
+.book-description {
+    padding: 0px 15px 15px 15px; 
+    text-align: left;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.book-description h3 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.book-summary {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.show-more {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    margin-block: 20px ;
+}
+
+.publish-date {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+.pagination {
+    background-color: #73f480;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+}
+
+.page-info {
+    font-size: 1rem;
+    color: #333;
+}
+
+.disabled{
+    background-color: #00356e;
+    cursor: not-allowed;
+}
+
+active{
+    background-color: #026fe3;
+    cursor: pointer;
+}

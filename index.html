@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-cont">
+            <h1>Books Library</h1>
+        <div class="search-container">
+            <input type="text" id="search" class="search" placeholder="Search by title or author.....">
+        </div>
+        <div class="control-box">
+            <div class="toggle">
+                <button class="grid-view active"><i class="fas fa-th"></i></button>
+                <button class="list-view"><i class="fas fa-list"></i></button>
+                <select class="sort">
+                  <option value="title-asc">Title (A-Z)</option>
+                  <option value="title-desc">Title (Z-A)</option>
+                  <option value="date-asc">Old Books</option>
+                  <option value="date-desc">New Books</option>
+                </select>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <div class="main-container">
+            <div class="container">
+                <div class="grid-container">
+                </div>
+                <div class="pagination">
+                    <button class="pagination-button prev-btn">Prev</button>
+                    <p class="page-info"></p>
+                    <div class="pagination-button next-btn">Next</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
