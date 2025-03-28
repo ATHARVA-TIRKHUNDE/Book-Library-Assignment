@@ -16,6 +16,7 @@ const paginationEl = document.querySelector('.pagination');
 // Fetch all books from the API
 async function fetchAllBooks() {
     const pagePromises = [];
+    // fetching all books at one time so that we can implement search ond sort on all books
     for (let page = 1; page <= totalPages; page++) {
         const url = `https://api.freeapi.app/api/v1/public/books?page=${page}&limit=${bookslimit}`;
         const options = { method: 'GET', headers: { accept: 'application/json' } };
