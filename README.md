@@ -26,7 +26,7 @@ Books Library is a user-friendly web application that dynamically fetches and di
 - **JavaScript**: Handle API requests, dynamic rendering, search, sorting, and pagination.
 
 ## Deployment
-[Add Deployment Link Here]
+[\[ Live Project Link \]](https://book-library-assi-git-56fea5-atharvatirkhundegmailcoms-projects.vercel.app/)
 
 ## API Endpoint
 - **GET**: `https://api.freeapi.app/api/v1/public/books`
